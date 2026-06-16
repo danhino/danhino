@@ -77,7 +77,7 @@ Technical Program Manager and full-stack builder with ~20 years in mortgage and 
 
 ### 🏥 AI Claims Processor
 
-> **An AI-driven claims intake system built for Family First ER, reducing triage time from 1–2 days to under 90 seconds.**
+> **An AI-driven claims intake system built for an ER Medical billing team, reducing triage time from 1–2 days to under 90 seconds.**
 
 🔗 **[github.com/danhino/ai-claims-processor](https://github.com/danhino/ai-claims-processor)**
 
