@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080b10"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0a0f1a"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#9b6dff;stop-opacity:0.15"/>
+      <stop offset="70%" style="stop-color:#9b6dff;stop-opacity:0.03"/>
+      <stop offset="100%" style="stop-color:#9b6dff;stop-opacity:0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1f2e" stroke-width="0.5"/>
+    </pattern>
+
+    <pattern id="hex" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="translate(0,0)">
+      <polygon points="30,2 55,15 55,37 30,50 5,37 5,15" fill="none" stroke="#151b2b" stroke-width="0.6"/>
+    </pattern>
+
+    <style>
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+      .cursor { animation: blink 1.2s infinite; }
+      @keyframes scanline {
+        0% { transform: translateY(-320px); }
+        100% { transform: translateY(320px); }
+      }
+      .scanline {
+        animation: scanline 4s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="320" fill="url(#bg)"/>
+  <rect width="900" height="320" fill="url(#hex)" opacity="0.6"/>
+  <rect width="900" height="320" fill="url(#grid)" opacity="0.3"/>
+
+  <ellipse cx="450" cy="160" rx="350" ry="200" fill="url(#glow)"/>
+
+  <rect class="scanline" x="0" y="0" width="900" height="2" fill="#9b6dff" opacity="0.04"/>
+
+  <rect x="0" y="0" width="900" height="1" fill="#9b6dff" opacity="0.4"/>
+  <rect x="0" y="319" width="900" height="1" fill="#9b6dff" opacity="0.4"/>
+
+  <!-- Decorative dots left -->
+  <circle cx="80" cy="60" r="1.5" fill="#9b6dff" opacity="0.3"/>
+  <circle cx="100" cy="45" r="1" fill="#3dd6ac" opacity="0.25"/>
+  <circle cx="60" cy="80" r="1" fill="#9b6dff" opacity="0.2"/>
+  <circle cx="120" cy="75" r="1.5" fill="#3dd6ac" opacity="0.15"/>
+
+  <!-- Decorative dots right -->
+  <circle cx="820" cy="250" r="1.5" fill="#ff6b9d" opacity="0.3"/>
+  <circle cx="800" cy="270" r="1" fill="#3dd6ac" opacity="0.25"/>
+  <circle cx="840" cy="235" r="1" fill="#ff6b9d" opacity="0.2"/>
+  <circle cx="780" cy="260" r="1.5" fill="#3dd6ac" opacity="0.15"/>
+
+  <!-- === TERMINAL ICON === -->
+  <g transform="translate(450, 65)">
+    <rect x="-130" y="-35" width="260" height="80" rx="10" fill="#0d1117" fill-opacity="0.5" stroke="#3dd6ac" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="-110" cy="-15" r="4" fill="#ff6b9d" opacity="0.8"/>
+    <circle cx="-94" cy="-15" r="4" fill="#9b6dff" opacity="0.8"/>
+    <circle cx="-78" cy="-15" r="4" fill="#3dd6ac" opacity="0.8"/>
+    <text x="-110" y="13" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="15" fill="#3dd6ac" opacity="0.9" text-anchor="start">&gt; cd ~/projects</text>
+    <text x="-110" y="34" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="15" fill="#e2e8f0" opacity="0.7" text-anchor="start">$ ./build --ship</text>
+  </g>
+
+  <!-- === TERMINAL PROMPT === -->
+  <g transform="translate(450, 185)">
+    <text text-anchor="middle" y="0" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, monospace" font-size="38" font-weight="700" letter-spacing="4">
+      <tspan fill="#3dd6ac" opacity="0.9">&gt;</tspan>
+      <tspan fill="#9b6dff" opacity="0.8"> $ </tspan>
+      <tspan fill="#e2e8f0">DANHINO</tspan>
+    </text>
+
+    <rect class="cursor" x="178" y="-26" width="3" height="34" fill="#3dd6ac" opacity="0.8" rx="1"/>
+  </g>
+
+  <!-- === SUBTITLE === -->
+  <text x="450" y="230" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, monospace" font-size="13" fill="#8b95a5" letter-spacing="3" opacity="0.7">
+    TPM &amp; SOLO BUILDER · AI AGENTS × MOBILE × WEB
+  </text>
+
+  <!-- Accent line under subtitle -->
+  <line x1="290" y1="248" x2="610" y2="248" stroke="#9b6dff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- === STATUS BADGES === -->
+  <g transform="translate(450, 280)" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', Consolas, monospace" font-size="10" letter-spacing="1.5">
+    <text x="-220" fill="#ff6b9d" opacity="0.5">◆ DANHINO.COM</text>
+    <text x="-30" fill="#3dd6ac" opacity="0.5">◆ HOUSTON, TX</text>
+    <text x="170" fill="#9b6dff" opacity="0.5">◆ OPEN TO WORK</text>
+  </g>
+
+</svg>
