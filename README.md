@@ -45,7 +45,17 @@ Technical Program Manager and full-stack builder with ~20 years in mortgage and 
 
 ### ☀️ 100 Miles of Summer
 
-> **A project built to track and gamify a summer running goal.**
+> **A PWA-ready fitness tracker to log and gamify a summer running goal — no framework, no backend, no cost.**
+
+| Layer | Tech |
+|---|---|
+| 🏗️ Structure | HTML5 semantic markup |
+| 🎨 Styling | CSS3, responsive dark mode via `@media prefers-color-scheme` |
+| ⚡ Logic | Vanilla JavaScript, no frameworks |
+| 📊 Charts | Chart.js — activity breakdown visualization |
+| 💾 Storage | Browser `localStorage` — offline-first, data stays on device |
+| 📤 Export | `Blob` + `FileReader` APIs — JSON import/export for backups |
+| 🌐 Hosting | GitHub Pages |
 
 🔗 **[github.com/danhino/100-miles-of-summer](https://danhino.github.io/100-miles-tracker/100-miles-tracker.html)**
 
