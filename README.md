@@ -47,7 +47,7 @@ Technical Program Manager and full-stack builder with ~20 years in mortgage and 
 
 > **A project built to track and gamify a summer running goal.**
 
-🔗 **[github.com/danhino/100-miles-of-summer](https://github.com/danhino/100-miles-of-summer)**
+🔗 **[github.com/danhino/100-miles-of-summer](https://danhino.github.io/100-miles-tracker/100-miles-tracker.html)**
 
 --
 
