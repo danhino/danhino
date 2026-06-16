@@ -1,25 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
   <defs>
+    <!-- Background gradient -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#080b10"/>
       <stop offset="50%" style="stop-color:#0d1117"/>
       <stop offset="100%" style="stop-color:#0a0f1a"/>
     </linearGradient>
-
+    
+     <!-- Accent glow -->
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" style="stop-color:#9b6dff;stop-opacity:0.15"/>
       <stop offset="70%" style="stop-color:#9b6dff;stop-opacity:0.03"/>
       <stop offset="100%" style="stop-color:#9b6dff;stop-opacity:0"/>
     </radialGradient>
-
+    
+    <!-- Subtle grid pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1f2e" stroke-width="0.5"/>
     </pattern>
-
+    
+    <!-- Hexagon pattern -->
     <pattern id="hex" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="translate(0,0)">
       <polygon points="30,2 55,15 55,37 30,50 5,37 5,15" fill="none" stroke="#151b2b" stroke-width="0.6"/>
     </pattern>
-
+    
+    <!-- Cursor blink animation -->
     <style>
       @keyframes blink {
         0%, 50% { opacity: 1; }
@@ -35,15 +40,19 @@
       }
     </style>
   </defs>
-
+  
+  <!-- Background -->
   <rect width="900" height="320" fill="url(#bg)"/>
   <rect width="900" height="320" fill="url(#hex)" opacity="0.6"/>
   <rect width="900" height="320" fill="url(#grid)" opacity="0.3"/>
-
+  
+  <!-- Center glow -->
   <ellipse cx="450" cy="160" rx="350" ry="200" fill="url(#glow)"/>
-
+  
+  <!-- Scanline effect -->
   <rect class="scanline" x="0" y="0" width="900" height="2" fill="#9b6dff" opacity="0.04"/>
-
+  
+  <!-- Subtle top/bottom border accents -->
   <rect x="0" y="0" width="900" height="1" fill="#9b6dff" opacity="0.4"/>
   <rect x="0" y="319" width="900" height="1" fill="#9b6dff" opacity="0.4"/>
 
