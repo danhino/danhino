@@ -57,7 +57,7 @@ Technical Program Manager and full-stack builder with ~20 years in mortgage and 
 | 📤 Export | `Blob` + `FileReader` APIs — JSON import/export for backups |
 | 🌐 Hosting | GitHub Pages |
 
-🔗 **[github.com/danhino/100-miles-of-summer](https://github.com/danhino/100-miles-of-summer)**
+🔗 **[github.com/danhino/100-miles-of-summer](https://danhino.github.io/100-miles-tracker/100-miles-tracker.html)**
 
 --
 
